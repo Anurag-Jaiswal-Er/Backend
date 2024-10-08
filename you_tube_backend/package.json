@@ -1,0 +1,11 @@
+{
+  "name": "you_tube_backend",
+  "version": "1.0.0",
+  "description": "you_tube_backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anurag Jaiswal",
+  "license": "ISC"
+}
