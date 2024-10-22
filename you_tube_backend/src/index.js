@@ -1,7 +1,7 @@
 // require('dotenv').config({path:'./env'})
-
+import mongoose from "mongoose";
 import dotenv from "dotenv";
-
+import { app } from "./app.js";
 import connectDB from "./db/index.js";
 
 dotenv.config({
@@ -11,7 +11,7 @@ dotenv.config({
 connectDB()
   .then(() => {
     app.listen(process.env.PORT || 8000, () => {
-      console.log(`Server is ready at post : ${process.env.PORT}`);
+      console.log(`Server is ready at port : ${process.env.PORT}`);
     });
   })
   .catch((error) => {
